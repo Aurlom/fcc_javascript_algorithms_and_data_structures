@@ -1,0 +1,96 @@
+:root {
+  --main-background: #37392E;
+  --part-background: #773344;
+  --main-text: #E7ECEF;
+  --borders: #A3CEF1;
+  --info-box: #19647E;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+}
+
+body {
+  background-color: var(--main-background);
+  color: var(--main-text);
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+}
+
+.partitions {
+  background-color: var(--part-background);
+  border: 2px solid var(--borders);
+  border-radius: 15px;
+  margin: 5px;
+  padding: 10px;
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  font-size: 1.5rem
+}
+
+#description {
+  background-color: var(--info-box);
+}
+
+#description p {
+  display: flex;
+  justify-content: center;
+}
+
+#description span {
+  margin-right: 10px;
+}
+
+#title {
+  background-color: inherit;
+  border: none;
+}
+
+#text-input {
+  border-radius: 5px;
+  padding: 5px;
+  width: 75%;
+  height: 5vh;
+  margin: 10px 0;
+}
+
+#check-btn {
+  background-color: var(--info-box);
+  color: var(--main-text);
+  border-radius: 5px;
+  height: 5vh;
+  width: 20%;
+  margin: 10px 0;
+}
+
+#result {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  #input-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #text-input {
+    width: 100%;
+  }
+
+  #check-btn {
+    width: 50%;
+    margin-top: 10px;
+  }
+}
