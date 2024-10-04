@@ -1,0 +1,53 @@
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: slategrey;
+  color: cornsilk;
+}
+
+#cash-register {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 95vw;
+  max-width: 300px;
+  margin: 10vh auto;
+}
+
+#cash {
+  height: 30px;
+  width: 150px;
+  font-size: 1.2em;
+  text-align: center;
+  border-radius: 6px;
+  border: 0;
+  margin: 10px;
+  padding: 5px;
+}
+
+#purchase-btn {
+  height: 30px;
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 6px;
+  border: 0;
+  background-color: cornsilk;
+  color: darkgreen;
+  margin: 10px;
+}
+
+#purchase-btn:hover {
+  cursor: pointer;
+}
+
+#purchase-btn:active {
+  background-color: blue;
+  color: white;
+}
